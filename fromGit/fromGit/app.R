@@ -14,7 +14,7 @@ library(readr)
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("This app is running from github"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
@@ -29,6 +29,7 @@ ui <- fluidPage(
         # Show a plot of the generated distribution
         mainPanel(
            plotOutput("distPlot"),
+           h1("https://github.com/vvseva/ceres"),
            
            tableOutput('table')
         )
